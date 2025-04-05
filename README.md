@@ -1,63 +1,76 @@
-## 🛍️ Simple ecommerce cart application [![CircleCI](https://circleci.com/gh/jeffersonRibeiro/react-shopping-cart.svg?style=svg)](https://circleci.com/gh/jeffersonRibeiro/react-shopping-cart)
+# 🧪 Cypress E2E Tests for Simple React Shopping Cart
 
-<p align="center">
+> Automated end-to-end tests for a simple ecommerce shopping cart application built with React and TypeScript.
 
-  <img src="./readme-banner.png">
-</p>
+This project contains Cypress E2E tests for a React-based shopping cart app originally created by [Jefferson Ribeiro](https://github.com/jeffersonRibeiro/react-shopping-cart).  
+The tests cover core user interactions such as adding products to the cart, updating quantities, and checking responsive behavior.
 
-## Basic Overview - [Live Demo](https://react-shopping-cart-67954.firebaseapp.com/)
+---
 
-<p align="left">
+## 🛍️ Application Overview
 
-  <img src="./work-in-the-netherlands.png" width="380" height="90">
-</p>
+This shopping cart prototype demonstrates how React, React Hooks, Context API, and Styled Components can be used to create a responsive, scalable e-commerce UI.
 
-✈️ [Follow Jeremy Akeze](https://www.linkedin.com/in/jeremy-akeze-9542b396/)
+You can run the application locally or check out the original live demo:  
+🔗 [Live Demo (original)](https://react-shopping-cart-67954.firebaseapp.com/)
 
-This simple shopping cart prototype shows how React with Typescript, React hooks, react Context and Styled Components can be used to build a friendly user experience with instant visual updates and scaleable code in ecommerce applications.
+---
 
-#### Features
+## 🚀 Getting Started
 
-- Add and remove products from the floating cart using Context Api
-- Filter products by available sizes using Context Api
-- Responsive design
-
-<!--
-## Getting started
-
-Try playing with the code on CodeSandbox :)
-
-[![Edit app](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/74rykw70qq)
- -->
-
-## Build/Run
-
-#### Requirements
+### 🔧 Requirements
 
 - Node.js
-- NPM
+- npm or yarn
 
-```javascript
+### ▶️ Run the Application
 
-/* First, Install the needed packages */
+```bash
 npm install
-
-/* Then start the React app */
 npm start
-
-/* To run the tests */
-npm run test
-
 ```
 
-### Copyright and license
+### 🧪 Run the Cypress Tests
 
-The MIT License (MIT). Please see License File for more information.
+```bash
+npm run cypress:open
+```
 
-<br/>
-<br/>
+---
 
-<p align="center"><img src="http://www.jeffersonribeiro.com/assets/img/apple-icon-180x180.png" width="35" height="35"/></p>
-<p align="center">
-<sub>A little project by <a href="http://www.jeffersonribeiro.com/">Jefferson Ribeiro</a></sub>
-</p>
+## 📁 Project Structure
+
+```
+/cypress
+  /e2e
+    cart.cy.ts      # Example test suite
+```
+
+---
+
+## ✅ Features Tested
+
+- Adding products to the cart
+- Removing products
+- Updating item quantities
+- Validating cart total
+- Responsive behavior
+
+---
+
+## 🧾 License
+
+This project is licensed under the MIT License.
+
+The underlying application code was created by [Jefferson Ribeiro](https://github.com/jeffersonRibeiro/react-shopping-cart) and is also licensed under the MIT License.
+
+---
+
+## 🙌 Credits
+
+- Original UI and application: [Jefferson Ribeiro](http://www.jeffersonribeiro.com/)
+- E2E tests added on top of the original project to demonstrate Cypress automation
+
+---
+
+<p align="center"><sub>Made with 🧠, 🧪, and ☕</sub></p>
