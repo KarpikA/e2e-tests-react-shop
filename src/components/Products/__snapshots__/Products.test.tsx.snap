@@ -10,6 +10,7 @@ Object {
       >
         <div
           class="Product__Container-sc-124al1g-2 kgHzaj"
+          data-cy="product"
           tabindex="1"
         >
           <div
@@ -58,6 +59,7 @@ Object {
           </div>
           <button
             class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+            data-cy="product-buy-button"
             tabindex="-1"
           >
             Add to cart
@@ -65,6 +67,7 @@ Object {
         </div>
         <div
           class="Product__Container-sc-124al1g-2 rtefv"
+          data-cy="product"
           tabindex="1"
         >
           <div
@@ -113,6 +116,7 @@ Object {
           </div>
           <button
             class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+            data-cy="product-buy-button"
             tabindex="-1"
           >
             Add to cart
@@ -120,6 +124,7 @@ Object {
         </div>
         <div
           class="Product__Container-sc-124al1g-2 rowhT"
+          data-cy="product"
           tabindex="1"
         >
           <div
@@ -163,6 +168,7 @@ Object {
           </div>
           <button
             class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+            data-cy="product-buy-button"
             tabindex="-1"
           >
             Add to cart
@@ -177,6 +183,7 @@ Object {
     >
       <div
         class="Product__Container-sc-124al1g-2 kgHzaj"
+        data-cy="product"
         tabindex="1"
       >
         <div
@@ -225,6 +232,7 @@ Object {
         </div>
         <button
           class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+          data-cy="product-buy-button"
           tabindex="-1"
         >
           Add to cart
@@ -232,6 +240,7 @@ Object {
       </div>
       <div
         class="Product__Container-sc-124al1g-2 rtefv"
+        data-cy="product"
         tabindex="1"
       >
         <div
@@ -280,6 +289,7 @@ Object {
         </div>
         <button
           class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+          data-cy="product-buy-button"
           tabindex="-1"
         >
           Add to cart
@@ -287,6 +297,7 @@ Object {
       </div>
       <div
         class="Product__Container-sc-124al1g-2 rowhT"
+        data-cy="product"
         tabindex="1"
       >
         <div
@@ -330,6 +341,7 @@ Object {
         </div>
         <button
           class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+          data-cy="product-buy-button"
           tabindex="-1"
         >
           Add to cart

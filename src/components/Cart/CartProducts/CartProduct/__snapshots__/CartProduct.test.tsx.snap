@@ -27,6 +27,7 @@ Object {
           </p>
           <p
             class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+            data-cy="cart-product-description"
           >
             S | White T-shirt
              
@@ -38,7 +39,9 @@ Object {
         <div
           class="CartProduct__Price-sc-11uohgb-4 NDRzT"
         >
-          <p>
+          <p
+            data-cy="cart-product-price"
+          >
             $  10.90
           </p>
           <div>
@@ -81,6 +84,7 @@ Object {
         </p>
         <p
           class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+          data-cy="cart-product-description"
         >
           S | White T-shirt
            
@@ -92,7 +96,9 @@ Object {
       <div
         class="CartProduct__Price-sc-11uohgb-4 NDRzT"
       >
-        <p>
+        <p
+          data-cy="cart-product-price"
+        >
           $  10.90
         </p>
         <div>

@@ -10,6 +10,7 @@ Object {
       >
         <div
           class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+          data-cy="cart-product"
         >
           <button
             class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
@@ -30,6 +31,7 @@ Object {
             </p>
             <p
               class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+              data-cy="cart-product-description"
             >
               S | White T-shirt
                
@@ -41,7 +43,9 @@ Object {
           <div
             class="CartProduct__Price-sc-11uohgb-4 NDRzT"
           >
-            <p>
+            <p
+              data-cy="cart-product-price"
+            >
               $  10.90
             </p>
             <div>
@@ -61,6 +65,7 @@ Object {
         </div>
         <div
           class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+          data-cy="cart-product"
         >
           <button
             class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
@@ -81,6 +86,7 @@ Object {
             </p>
             <p
               class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+              data-cy="cart-product-description"
             >
               X | Wine
                
@@ -92,7 +98,9 @@ Object {
           <div
             class="CartProduct__Price-sc-11uohgb-4 NDRzT"
           >
-            <p>
+            <p
+              data-cy="cart-product-price"
+            >
               $  13.25
             </p>
             <div>
@@ -112,6 +120,7 @@ Object {
         </div>
         <div
           class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+          data-cy="cart-product"
         >
           <button
             class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
@@ -132,6 +141,7 @@ Object {
             </p>
             <p
               class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+              data-cy="cart-product-description"
             >
               XL | Tony Hawk
                
@@ -143,7 +153,9 @@ Object {
           <div
             class="CartProduct__Price-sc-11uohgb-4 NDRzT"
           >
-            <p>
+            <p
+              data-cy="cart-product-price"
+            >
               $  25.90
             </p>
             <div>
@@ -170,6 +182,7 @@ Object {
     >
       <div
         class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+        data-cy="cart-product"
       >
         <button
           class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
@@ -190,6 +203,7 @@ Object {
           </p>
           <p
             class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+            data-cy="cart-product-description"
           >
             S | White T-shirt
              
@@ -201,7 +215,9 @@ Object {
         <div
           class="CartProduct__Price-sc-11uohgb-4 NDRzT"
         >
-          <p>
+          <p
+            data-cy="cart-product-price"
+          >
             $  10.90
           </p>
           <div>
@@ -221,6 +237,7 @@ Object {
       </div>
       <div
         class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+        data-cy="cart-product"
       >
         <button
           class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
@@ -241,6 +258,7 @@ Object {
           </p>
           <p
             class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+            data-cy="cart-product-description"
           >
             X | Wine
              
@@ -252,7 +270,9 @@ Object {
         <div
           class="CartProduct__Price-sc-11uohgb-4 NDRzT"
         >
-          <p>
+          <p
+            data-cy="cart-product-price"
+          >
             $  13.25
           </p>
           <div>
@@ -272,6 +292,7 @@ Object {
       </div>
       <div
         class="CartProduct__Container-sc-11uohgb-0 iFEDVZ"
+        data-cy="cart-product"
       >
         <button
           class="CartProduct__DeleteButton-sc-11uohgb-5 fZpMUH"
@@ -292,6 +313,7 @@ Object {
           </p>
           <p
             class="CartProduct__Desc-sc-11uohgb-3 bRgwLG"
+            data-cy="cart-product-description"
           >
             XL | Tony Hawk
              
@@ -303,7 +325,9 @@ Object {
         <div
           class="CartProduct__Price-sc-11uohgb-4 NDRzT"
         >
-          <p>
+          <p
+            data-cy="cart-product-price"
+          >
             $  25.90
           </p>
           <div>
