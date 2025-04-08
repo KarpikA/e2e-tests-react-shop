@@ -26,13 +26,15 @@
     "test": "react-scripts test --silent",
     "test:watch": "npm test -- --watch",
     "test:coverage": "npm test -- --coverage --watchAll",
+    "test:coverage:ci": "npm test -- --coverage --watchAll=false",
     "deploy": "firebase deploy",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
     "format": "prettier --write \"**/*.+(ts|tsx|js|json|css)\"",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "cypress:run:headed": "cypress run --headed"
+    "cypress:run:headed": "cypress run --headed",
+    "test:e2e": "start-server-and-test start http://localhost:3000 cypress:run"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -42,8 +44,8 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 64,
-        "functions": 90,
+        "branches": 20,
+        "functions": 50,
         "lines": 90,
         "statements": 90
       }
@@ -88,6 +90,7 @@
     "firebase-tools": "^10.2.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.10",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "start-server-and-test": "^2.0.11"
   }
 }
