@@ -7,11 +7,11 @@ import { useCart } from 'contexts/cart-context';
 
 import * as S from './style';
 
-interface IProps {
+interface IProps extends React.HTMLAttributes<HTMLDivElement> {
   product: IProduct;
 }
 
-const Product = ({ product }: IProps) => {
+const Product = ({ product, ...props }: IProps) => {
   const { openCart, addProduct } = useCart();
   const {
     sku,
@@ -53,7 +53,7 @@ const Product = ({ product }: IProps) => {
   };
 
   return (
-    <S.Container onKeyUp={handleAddProductWhenEnter} sku={sku} tabIndex={1}>
+    <S.Container onKeyUp={handleAddProductWhenEnter} sku={sku} tabIndex={1} {...props}>
       {isFreeShipping && <S.Stopper>Free shipping</S.Stopper>}
       <S.Image alt={title} />
       <S.Title>{title}</S.Title>
@@ -65,7 +65,7 @@ const Product = ({ product }: IProps) => {
         </S.Val>
         {productInstallment}
       </S.Price>
-      <S.BuyButton onClick={handleAddProduct} tabIndex={-1}>
+      <S.BuyButton data-cy='product-buy-button' onClick={handleAddProduct} tabIndex={-1}>
         Add to cart
       </S.BuyButton>
     </S.Container>
