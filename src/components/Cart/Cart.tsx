@@ -39,12 +39,12 @@ const Cart = () => {
       </S.CartButton>
 
       {isOpen && (
-        <S.CartContent>
+        <S.CartContent data-cy='cart-content'>
           <S.CartContentHeader>
             <S.CartIcon large>
               <S.CartQuantity>{total.productQuantity}</S.CartQuantity>
             </S.CartIcon>
-            <S.HeaderTitle>Cart</S.HeaderTitle>
+            <S.HeaderTitle data-cy='cart-title'>Cart</S.HeaderTitle>
           </S.CartContentHeader>
 
           <CartProducts products={products} />
@@ -52,7 +52,7 @@ const Cart = () => {
           <S.CartFooter>
             <S.Sub>SUBTOTAL</S.Sub>
             <S.SubPrice>
-              <S.SubPriceValue>{`${total.currencyFormat} ${formatPrice(
+              <S.SubPriceValue data-cy='cart-subtotal'>{`${total.currencyFormat} ${formatPrice(
                 total.totalPrice,
                 total.currencyId
               )}`}</S.SubPriceValue>
@@ -69,7 +69,7 @@ const Cart = () => {
                 ) : null}
               </S.SubPriceInstallment>
             </S.SubPrice>
-            <S.CheckoutButton onClick={handleCheckout} autoFocus>
+            <S.CheckoutButton data-cy='cart-checkout-button' onClick={handleCheckout} autoFocus>
               Checkout
             </S.CheckoutButton>
           </S.CartFooter>

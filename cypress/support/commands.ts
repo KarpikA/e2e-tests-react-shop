@@ -1,4 +1,3 @@
-/// <reference types="cypress" />
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -35,3 +34,13 @@
 //     }
 //   }
 // }
+
+import { normalizeText } from "./utils";
+
+Cypress.Commands.add('compareNormalizedText', (selectorA: string, selectorB: string) => {
+    cy.get(selectorA).invoke('text').then((textA) => {  
+      cy.get(selectorB).invoke('text').then((textB) => {
+        expect(normalizeText(textA)).to.equal(normalizeText(textB));
+      });
+    });
+  });

@@ -5,10 +5,10 @@ import { useCart } from 'contexts/cart-context';
 
 import * as S from './style';
 
-interface IProps {
+interface IProps extends React.HTMLAttributes<HTMLDivElement> {
   product: ICartProduct;
 }
-const CartProduct = ({ product }: IProps) => {
+const CartProduct = ({ product, ...props }: IProps,) => {
   const { removeProduct, increaseProductQuantity, decreaseProductQuantity } =
     useCart();
   const {
@@ -27,7 +27,7 @@ const CartProduct = ({ product }: IProps) => {
   const handleDecreaseProductQuantity = () => decreaseProductQuantity(product);
 
   return (
-    <S.Container>
+    <S.Container  {...props}>
       <S.DeleteButton
         onClick={handleRemoveProduct}
         title="remove product from cart"
@@ -38,13 +38,13 @@ const CartProduct = ({ product }: IProps) => {
       />
       <S.Details>
         <S.Title>{title}</S.Title>
-        <S.Desc>
+        <S.Desc data-cy='cart-product-description'>
           {`${availableSizes[0]} | ${style}`} <br />
           Quantity: {quantity}
         </S.Desc>
       </S.Details>
       <S.Price>
-        <p>{`${currencyFormat}  ${formatPrice(price, currencyId)}`}</p>
+        <p data-cy='cart-product-price'>{`${currencyFormat}  ${formatPrice(price, currencyId)}`}</p>
         <div>
           <S.ChangeQuantity
             onClick={handleDecreaseProductQuantity}
