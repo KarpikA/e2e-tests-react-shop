@@ -55,6 +55,7 @@ Object {
         </div>
         <button
           class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+          data-cy="product-buy-button"
           tabindex="-1"
         >
           Add to cart
@@ -113,6 +114,7 @@ Object {
       </div>
       <button
         class="Product__BuyButton-sc-124al1g-0 jCZDKU"
+        data-cy="product-buy-button"
         tabindex="-1"
       >
         Add to cart
