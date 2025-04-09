@@ -26,7 +26,7 @@ const Cart = () => {
 
   return (
     <S.Container isOpen={isOpen}>
-      <S.CartButton onClick={handleToggleCart(isOpen)}>
+      <S.CartButton data-cy='cart-button' onClick={handleToggleCart(isOpen)}>
         {isOpen ? (
           <span>X</span>
         ) : (
