@@ -38,12 +38,38 @@ npm run cypress:open
 
 ---
 
+## ⚙️ CI/CD with GitHub Actions
+
+This project includes a complete **CI/CD pipeline configured with GitHub Actions**, featuring:
+
+- ✅ **Component tests** with Jest and snapshot coverage
+- 🔍 **End-to-end tests** with Cypress (including screenshots on failure)
+- 📄 **Coverage reports** uploaded as artifacts
+- 🧱 **Reusable composite action** to setup Node, cache dependencies, and install packages
+- 🚀 **Multi-stage deployments** (regression → production) with environment support
+- 🧪 **Optional branch testing workflow** with manual deploy to a development environment
+
+CI runs automatically on:
+
+- every push to `main` (build, test, deploy)
+- any branch push (`test-branch.yml`)
+- manual dispatch (e.g. for triggering deploys)
+
+---
+
 ## 📁 Project Structure
 
 ```
 /cypress
   /e2e
     cart.cy.ts      # Example test suite
+
+/.github
+  /actions
+    setup-node-deps/   # Reusable composite GitHub Action
+  /workflows
+    main.yml           # Main CI/CD pipeline
+    test-branch.yml    # Test & dev deploy workflow for branches
 ```
 
 ---
@@ -69,7 +95,7 @@ The underlying application code was created by [Jefferson Ribeiro](https://githu
 ## 🙌 Credits
 
 - Original UI and application: [Jefferson Ribeiro](http://www.jeffersonribeiro.com/)
-- E2E tests added on top of the original project to demonstrate Cypress automation
+- **E2E tests and CI/CD setup** added on top of the original project to demonstrate automated testing and deployment with Cypress and GitHub Actions
 
 ---
 
