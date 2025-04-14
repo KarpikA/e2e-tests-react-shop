@@ -15,21 +15,10 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🔧 Set up Node.js
-        uses: actions/setup-node@v4
+      - name: 🔧📦 Set up Node, cache and install deps
+        uses: ./.github/actions/setup-node-deps
         with:
           node-version: '23.7.0'
-
-      - name: 📦 Cache npm dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: 📦 Install dependencies
-        run: npm ci
 
       - name: 🧪 Run component tests with coverage
         run: npm run test:coverage:ci
@@ -50,21 +39,8 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🔧 Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '23.7.0'
-
-      - name: 📦 Cache npm dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: 📦 Install dependencies
-        run: npm ci
+      - name: 🔧📦 Set up Node, cache and install deps
+        uses: ./.github/actions/setup-node-deps
 
       - name: 🔍 Run E2E tests with Cypress
         id: cypress
@@ -86,21 +62,8 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🔧 Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '23.7.0'
-
-      - name: 📦 Cache npm dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: 📦 Install dependencies
-        run: npm ci
+      - name: 🔧📦 Set up Node, cache and install deps
+        uses: ./.github/actions/setup-node-deps
 
       - name: 🏗 Build application
         run: npm run build
@@ -119,21 +82,8 @@ jobs:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🔧 Set up Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '23.7.0'
-
-      - name: 📦 Cache npm dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-
-      - name: 📦 Install dependencies
-        run: npm ci
+      - name: 🔧📦 Set up Node, cache and install deps
+        uses: ./.github/actions/setup-node-deps
 
       - name: 🏗 Build application
         run: npm run build
